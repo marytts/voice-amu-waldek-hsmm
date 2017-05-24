@@ -15,6 +15,7 @@ voice {
     name = 'amu-waldek-hsmm'
     gender = 'male'
     language = 'pl'
+    type = 'hsmm'
 }
 
 configurations.all {
