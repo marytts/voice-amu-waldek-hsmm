@@ -1,2 +1,11 @@
+plugins {
+    id 'de.dfki.mary.voicebuilding-base' version '5.2.1'
+}
+
 group 'de.dfki.mary'
 version '0.1.0-SNAPSHOT'
+
+voice {
+    name = 'amu-waldek-hsmm'
+    gender = 'male'
+}
