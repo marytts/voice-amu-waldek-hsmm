@@ -5,7 +5,22 @@ plugins {
 group 'de.dfki.mary'
 version '0.1.0-SNAPSHOT'
 
+repositories {
+    maven {
+        url 'https://oss.jfrog.org/artifactory/oss-snapshot-local/'
+    }
+}
+
 voice {
     name = 'amu-waldek-hsmm'
     gender = 'male'
+    language = 'pl'
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        if (details.requested.name == 'marytts-lang-pl') {
+            details.useTarget group: details.requested.group, name: details.requested.name, version: '0.1.0-SNAPSHOT'
+        }
+    }
 }
