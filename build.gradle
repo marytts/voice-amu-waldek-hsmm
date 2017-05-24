@@ -16,6 +16,13 @@ voice {
     gender = 'male'
     language = 'pl'
     type = 'hsmm'
+    description = 'A male Polish hidden semi-Markov model voice, built from voice recordings provided by AMU Poznan'
+    license {
+        name = 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International'
+        shortName = 'CC-BY-NC-SA'
+        url = 'http://mary.dfki.de/download/by-nc-sa-4.0.html'
+    }
+    samplingRate = 16000
 }
 
 configurations.all {
